@@ -1,11 +1,16 @@
 <template>
-    <header id="header">
+    
+        <v-flex xs6 md6>
+  
+ 
+
+      <header id="header">
         <nav id="main_navigation">
             <router-link to="/">
                 <img src="@/assets/images/konamiota.JPG" alt="home">
             </router-link>
             </nav>
-        <nav id="sns_navigation">
+         <nav id="sns_navigation">
             <ul>
                 <li><span><a href="https://www.facebook.com/konami.ota.73">
                 <img src="@/assets/icons/FB_icon.png" alt="fb" >
@@ -17,8 +22,10 @@
                 <img src="@/assets/icons/TWITTER.png" alt="twi" >
                 </a></span></li>
             </ul>
-        </nav>
-    </header>
+         </nav>
+        </header>
+     </v-flex>
+    
 </template> 
 
 <style>
