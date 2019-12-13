@@ -1,21 +1,26 @@
 <template>
   <div>
     <TheHeader/>
-    <main class="contents">
+    <Left />
+ 
       <nuxt/>
-    </main>
-    <TheFooter/>
+    <Right />
+ 
   </div>
 </template>
 
 <script>
   import TheHeader from '~/components/common/TheHeader';
   import TheFooter from '~/components/common/TheFooter';
+  import Left from '~/components/common/Left';
+  import Right from '~/components/common/Right';
 
   export default {
     components: {
       TheHeader,
-      TheFooter
+      TheFooter,
+      Left,
+      Right
     }
   }
 </script>
