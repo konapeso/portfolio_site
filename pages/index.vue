@@ -1,6 +1,8 @@
 <template>
        <div class="container">
+         <v-row align="center" justify="center">
          <img src="@/assets/images/white-cloud.jpg" alt="">
+         </v-row>
 
        </div>
 </template>
