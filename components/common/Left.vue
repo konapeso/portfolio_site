@@ -18,7 +18,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 #left{
     z-index: 5;
     position: fixed;
@@ -50,6 +50,12 @@
     display: inline-block;
 }
 
- 
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #808080;
+  text-decoration: none;
+}
 
 </style>

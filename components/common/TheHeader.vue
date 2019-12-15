@@ -28,7 +28,7 @@
     
 </template> 
 
-<style>
+<style scoped>
     #header{
    z-index: 20;
     position: fixed;

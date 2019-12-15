@@ -1,20 +1,20 @@
 <template>
        <div class="container">
-         <img src="@/assets/images/about.JPG" alt="">
+         <img src="@/assets/images/about1.JPG" alt="">
 
        </div>
 </template>
 
-<style>
+<style scoped>
 .container{
-  margin-top:30px;
+  margin-top:60px;
 padding: 90px 50px 60px 50px;
     height: 100%;
     text-align:center;
     }
 
     .container img{
-      max-width: 800px;
+      max-width: 1000px;
       height: auto;
     }
   
