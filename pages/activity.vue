@@ -6,33 +6,27 @@
       class="mx-auto" ma-3
     >
       
-  
-      <v-app-bar
-        dark
-        color="pink"
-      >
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
-  
-        <v-toolbar-title></v-toolbar-title>
-  
-        <v-spacer></v-spacer>
-  
-        <v-btn icon>
-          <v-icon>mdi-magnify</v-icon>
-        </v-btn>
-      </v-app-bar>
+
   
       <v-container>
+        
           <h2>ACTIVITY</h2>
-          <v-spacer></v-spacer>
-        <v-row dense>
-            
           
+        <v-row dense>        
           <v-col
             v-for="(item, i) in items"
             :key="i"
             cols="12"
-          ><a :href="item.link">
+          >
+          <v-hover
+          v-slot:default="{ hover }"
+          :open-delay="openDelay"
+          :close-delay="closeDelay"
+          :disabled="disabled"
+          :value="value"
+        >
+          
+          <a :href="item.link">
             <v-card 
               color="grey lighten-5"
             >
@@ -65,9 +59,10 @@
   
                 
               </div>
-            </v-card></a>
+            </v-card></a></v-hover>
             
           </v-col>
+     
         </v-row>
       </v-container>
     </v-card>
@@ -86,7 +81,7 @@ a {
 
 }
 h2{
-   margin: 10px; 
+   margin-bottom: 50px; 
 }
 
 </style>
@@ -95,6 +90,12 @@ h2{
 export default {
     data(){
         return{
+          hover:[{
+            disabled: false,
+            openDelay: '0',
+            closeDelay: '0',
+            value: false,
+        }],
            items: [
       {
         img: "/item1.png",

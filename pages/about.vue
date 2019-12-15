@@ -7,14 +7,14 @@
 
 <style scoped>
 .container{
-  margin-top:60px;
+  margin-top:50px;
 padding: 90px 50px 60px 50px;
     height: 100%;
     text-align:center;
     }
 
     .container img{
-      max-width: 1000px;
+      max-width: 800px;
       height: auto;
     }
   

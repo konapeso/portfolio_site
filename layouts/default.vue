@@ -1,12 +1,10 @@
 <template>
-  <div>
+  <v-app>
     <TheHeader/>
     <Left />
- 
-      <nuxt/>
+    <nuxt/>
     <Right />
- 
-  </div>
+  </v-app>
 </template>
 
 <script>
@@ -36,7 +34,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background-color:#fff;
+  color : ＃808080
 }
+
 *,
 *:before,
 *:after {
@@ -48,5 +49,7 @@ html {
   height: 100%;
   text-align: center;
 }
-
+.v-application--wrap{
+  background-color:#fff;
+}
 </style>

@@ -1,10 +1,11 @@
 <template>
-  <div class="container">
-
+ 
       <v-container>
+
+        <v-content>
           <h3>WEB SITE</h3>
           <v-row align="center" justify="center">
-          <v-card class="mx-auto" max-width="300" >
+          <v-card class="mx-auto" max-width="400" >
         <a href="http://zeleplus.com">
               <v-img class="white--text align-end" height="400px" src="/zeleplus.png">
                 <v-card-title>zele+</v-card-title>
@@ -17,13 +18,13 @@
     </v-card-text>
           </v-card>
           </v-row>
-      </v-container>
+      </v-content>
     
     
-    <v-container class="my-5">
+    <v-content class="my-5">
         <h3>Git hub Repositories</h3>
       <v-layout row wrap>
-        <v-flex xs12 sm6 md4 lg3 v-for="repo in repos" :key="repo.name">
+        <v-flex xs12 sm6 md4 lg3 v-for="(repo, i) in repos" :key="i">
           <v-card class="text-xs-center ma-3">
             <v-img :src="repo.image" height="100px" >
             </v-img>
@@ -42,17 +43,17 @@
         </v-flex>
       </v-layout>
     
-    </v-container>
-    <v-container>
+    </v-content>
+    <v-content>
         <h3>Works</h3>
         <v-row>
           
-            <v-col cols="6" sm="4" v-for=" work in works" :key="work">
+            <v-col cols="6" sm="4" v-for=" (work, i) in works" :key="i">
             <v-img :src="work.img"></v-img>
             </v-col>
         
         </v-row>
-    </v-container>
+    </v-content>
 
     <h3>illustration</h3>
     <v-row>
@@ -75,14 +76,7 @@
      
       </v-col>
     </v-row>
-
-
-
-
-
-
-
-  </div>
+</v-container>
 </template>
 
 <style>
@@ -91,10 +85,7 @@
   height: 100%;
   text-align: center;
 }
-.container h3{
-    margin-bottom:20px;
-    margin-top: -30px;
-}
+
 
 a {
 text-decoration: none;
