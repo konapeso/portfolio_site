@@ -1,6 +1,6 @@
 <template>
        <div class="container">
-         <img src="@/assets/images/white-clouds.jpg" alt="">
+         <img src="@/assets/images/white-cloud.jpg" alt="">
 
        </div>
 </template>
