@@ -5,7 +5,14 @@
         <v-content>
           <h3>WEB SITE</h3>
           <v-row align="center" justify="center">
-          <v-card class="mx-auto" max-width="400" >
+            <v-hover
+                  v-slot:default="{ hover }"
+                  :open-delay="hover.openDelay"
+                  :close-delay="hover.closeDelay"
+                  :disabled="hover.disabled"
+                  :value="hover.value"
+                >
+          <v-card :elevation="hover ? 8 : 2" class="mx-auto" max-width="400" >
         <a href="http://zeleplus.com">
               <v-img class="white--text align-end" height="400px" src="/zeleplus.png">
                 <v-card-title>zele+</v-card-title>
@@ -17,6 +24,7 @@
       <div>HTML/CSS</div>
     </v-card-text>
           </v-card>
+            </v-hover>
           </v-row>
       </v-content>
     
@@ -25,7 +33,14 @@
         <h3>Git hub Repositories</h3>
       <v-layout row wrap>
         <v-flex xs12 sm6 md4 lg3 v-for="(repo, i) in repos" :key="i">
-          <v-card class="text-xs-center ma-3">
+          <v-hover
+                  v-slot:default="{ hover }"
+                  :open-delay="hover.openDelay"
+                  :close-delay="hover.closeDelay"
+                  :disabled="hover.disabled"
+                  :value="hover.value"
+                >
+          <v-card :elevation="hover ? 8 : 2" class=" text-xs-center ma-3">
             <v-img :src="repo.image" height="100px" >
             </v-img>
             <v-card-text>
@@ -40,6 +55,7 @@
               </div>
             </v-card-actions>
           </v-card>
+          </v-hover>
         </v-flex>
       </v-layout>
     
@@ -102,6 +118,13 @@ import GitHubImage from "@/assets/images/GitHub.png";
 export default {
   data() {
     return {
+      hover: [
+        {
+          disabled: false,
+          openDelay: "0",
+          closeDelay: "0",
+          value: false
+        }],
       repos: [
         { name: "Qiitaリアルタームサーチ", role: "Vue.js", image: GitHubImage, link:"https://github.com/konapeso/qiita_realtime_search" },
         { name: "チャットアプリ", role: "Vue.js/Firebase", image: GitHubImage, link:"https://github.com/konapeso/vue-firebase"},
