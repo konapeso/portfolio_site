@@ -67,7 +67,7 @@
 </v-container>
 </template>
 
-<style>
+<style scoped>
 .container {
   padding: 90px 50px 60px 50px;
   height: 100%;
