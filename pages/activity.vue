@@ -39,7 +39,7 @@
   </div>
 </template>
 
-<style scorped>
+<style scoped>
 .v-application--wrap {
   background-color: #fff;
 }
