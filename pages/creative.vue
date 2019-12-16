@@ -6,7 +6,7 @@
     
     
     <v-content class="my-5">
-        <h3 class="ma-6">WEB SITE</h3>
+        <h3>WEB SITE</h3>
       <v-layout row wrap>
         
         <v-flex xs12 sm6 md4 lg3 v-for="(repo, i) in repos" :key="i">
