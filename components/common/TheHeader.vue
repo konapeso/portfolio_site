@@ -18,7 +18,7 @@
                 <li><span><a href="https://www.instagram.com/kona_pasyo/">
                 <img src="@/assets/icons/INSTAGRAM.png" alt="insta" >
                 </a></span></li>
-                <li><span><a href="https://www.instagram.com/kona_pasyo/">
+                <li><span><a href="https://twitter.com/kona_peso">
                 <img src="@/assets/icons/TWITTER.png" alt="twi" >
                 </a></span></li>
             </ul>
