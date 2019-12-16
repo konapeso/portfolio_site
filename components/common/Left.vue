@@ -27,7 +27,7 @@
     bottom: 100px;
     width: 60px;
 
-    background-color: #fff;
+    
 }
 #left_navigation{
     position: fixed;

@@ -1,6 +1,6 @@
 <template>
     
-        <v-flex xs6 md6>
+        <v-flex xs6 md6 >
   
  
 
@@ -23,6 +23,7 @@
                 </a></span></li>
             </ul>
          </nav>
+    
         </header>
      </v-flex>
     

@@ -1,7 +1,7 @@
 <template>
        <div class="container">
          <v-row align="center" justify="center">
-         <img src="@/assets/images/white-cloud.jpg" alt="">
+         <v-img src="/white-cloud.jpg" class="mt-n12" max-width="850"></v-img>
          </v-row>
 
        </div>
@@ -15,9 +15,6 @@
     text-align:center;
     } */
 
-    .container img{
-      max-width: 800px;
-      height: auto;
-    }
+
   
 </style>
