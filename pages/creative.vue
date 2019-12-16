@@ -6,7 +6,7 @@
     
     
     <v-content class="my-5">
-        <h3 class="ma-6">WEB SITE</h3>
+        <h3 class="ma-10">WEB SITE</h3>
       <v-layout row wrap>
         
         <v-flex xs12 sm6 md4 lg3 v-for="(repo, i) in repos" :key="i">
@@ -69,7 +69,7 @@
 
 <style scoped>
 .container {
-  padding: 0px 50px 60px 50px;
+  padding: 80px 50px 60px 50px;
   height: 100%;
   text-align: center;
 }
