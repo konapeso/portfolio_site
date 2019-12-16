@@ -49,7 +49,7 @@
       <v-col cols="12" sm="6" offset-sm="3">
        
 
-        <v-card class="mt-4 mb-4 pa-3">
+        <v-card class="mt-4 mb-4">
             <v-layout row wrap>
                 <v-flex xs4 v-for="(item,i) in items" :key="i">
                 <v-card>
@@ -109,14 +109,15 @@ export default {
       works:[
           { img: require("../assets/works/works1.JPG")},
           { img: require("../assets/works/works2.jpg")},
-          { img: require("../assets/works/works3.JPG")}
+          { img: require("../assets/works/work4.jpg")}
       ],
       items: [
                 {src: '/illust1.JPG'},
                 {src: '/illust2.JPG'},
                 {src: '/illust3.JPG'},
                 {src: '/illust4.JPG'},
-                {src: '/illust5.JPG'}
+                {src: '/illust5.JPG'},
+                {src: '/logo1.JPG'}
             
             ]
       
