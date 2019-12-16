@@ -13,7 +13,7 @@ padding: 90px 50px 60px 50px;
     text-align:center;
     }
 
-    .container img{
+  .container img{
       max-width: 800px;
       height: auto;
     }
