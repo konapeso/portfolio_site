@@ -49,7 +49,7 @@ a {
 h2 {
   margin-bottom: 50px;
 }
-.content{
+.container{
   margin-top:50px;
 }
 </style>
