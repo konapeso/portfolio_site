@@ -1,6 +1,6 @@
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
   /*
   ** Headers of the page
   */
@@ -23,6 +23,7 @@ export default {
   ** Global CSS
   */
   css: [
+    "~assets/css/transition.css"
   ],
   /*
   ** Plugins to load before mounting the App

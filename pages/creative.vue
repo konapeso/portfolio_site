@@ -2,9 +2,15 @@
  
       <v-container>
 
-        <v-content>
-          <h3>WEB SITE</h3>
-          <v-row align="center" justify="center">
+        
+    
+    
+    <v-content class="my-5">
+        <h3>WEB SITE</h3>
+      <v-layout row wrap>
+        
+        <v-flex xs12 sm6 md4 lg3 v-for="(repo, i) in repos" :key="i">
+          <a :href="repo.link" target="_blank">
             <v-hover
                   v-slot:default="{ hover }"
                   :open-delay="hover.openDelay"
@@ -12,50 +18,16 @@
                   :disabled="hover.disabled"
                   :value="hover.value"
                 >
-          <v-card :elevation="hover ? 8 : 2" class="mx-auto" max-width="400" >
-        <a href="http://zeleplus.com">
-              <v-img class="white--text align-end" height="400px" src="/zeleplus.png">
-                <v-card-title>zele+</v-card-title>
-          
-      </v-img></a>
-      <v-card-text class="text--primary">
-      <div>イベントサイト</div>
-
-      <div>HTML/CSS</div>
-    </v-card-text>
-          </v-card>
-            </v-hover>
-          </v-row>
-      </v-content>
-    
-    
-    <v-content class="my-5">
-        <h3>Git hub Repositories</h3>
-      <v-layout row wrap>
-        <v-flex xs12 sm6 md4 lg3 v-for="(repo, i) in repos" :key="i">
-          <v-hover
-                  v-slot:default="{ hover }"
-                  :open-delay="hover.openDelay"
-                  :close-delay="hover.closeDelay"
-                  :disabled="hover.disabled"
-                  :value="hover.value"
-                >
           <v-card :elevation="hover ? 8 : 2" class=" text-xs-center ma-3">
-            <v-img :src="repo.image" height="100px" >
+            <v-img :src="repo.image" height="300px" >
             </v-img>
             <v-card-text>
               <div class="subheading">{{ repo.name }}</div>
-              <div class="gray--text">{{ repo.role }}</div>
+              <div class="gray--text">{{ repo.lang }}</div>
             </v-card-text>
-            <v-card-actions>
-              <div class="my-3">  
-              <v-btn>
-                <a :href="repo.link">GitHub</a>
-              </v-btn>
-              </div>
-            </v-card-actions>
-          </v-card>
-          </v-hover>
+            
+          </v-card></v-hover>
+          </a>
         </v-flex>
       </v-layout>
     
@@ -126,10 +98,12 @@ export default {
           value: false
         }],
       repos: [
-        { name: "Qiitaリアルタームサーチ", role: "Vue.js", image: GitHubImage, link:"https://github.com/konapeso/qiita_realtime_search" },
-        { name: "チャットアプリ", role: "Vue.js/Firebase", image: GitHubImage, link:"https://github.com/konapeso/vue-firebase"},
-        { name: "ブログアプリ", role: "Nuxt.js/Firebase", image: GitHubImage, link:"https://github.com/konapeso/nuxt-blog-service" },
-        { name: "タイピングゲーム", role: "JavaScript", image: GitHubImage, link:"https://github.com/konapeso/typinggame_js" },
+        { name: "イベントサイト", lang:"HTML/CSS", image:'/zeleplus.png', link:"https://zeleplus.com"},
+        { name: "プロフィールサイト", lang:"HTML/CSS", image:'/page4.JPG', link:"https://jovial-cori-516369.netlify.com/profile.html"},
+        { name: "Qiitaリアルタームサーチ", lang: "Vue.js", image: '/page3.png', link:"https://objective-euler-6be823.netlify.com/" },
+        { name: "チャットアプリ", lang: "Vue.js/Firebase", image: '/page1.png', link:"https://stupefied-dubinsky-d35a10.netlify.com/#/"},
+        { name: "ブログアプリ", lang: "Nuxt.js/Firebase", image: GitHubImage, link:"https://github.com/konapeso/nuxt-blog-service" },
+        { name: "タイピングゲーム", lang: "JavaScript", image: '/page2.png', link:"https://affectionate-austin-857211.netlify.com/sample.html" },
        
       ],
       works:[
