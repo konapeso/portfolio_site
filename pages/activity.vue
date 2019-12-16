@@ -3,7 +3,7 @@
     <v-app id="inspire">
       <v-card max-width="800" class="mx-auto" ma-3>
         <v-container>
-          <h2>ACTIVITY</h2>
+          <h2 　class="mt-10">ACTIVITY</h2>
 
           <v-row dense>
             <v-col v-for="(item, i) in items" :key="i" cols="12">

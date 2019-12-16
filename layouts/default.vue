@@ -48,7 +48,6 @@ html {
   padding: 90px 50px 60px 50px;
   height: 100%;
   text-align: center;
-  margin-top: 50px;
 }
 .v-application--wrap{
   background-color:#fff;

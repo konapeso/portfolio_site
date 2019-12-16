@@ -6,7 +6,7 @@
     
     
     <v-content class="my-5">
-        <h3>WEB SITE</h3>
+        <h3 class="ma-6">WEB SITE</h3>
       <v-layout row wrap>
         
         <v-flex xs12 sm6 md4 lg3 v-for="(repo, i) in repos" :key="i">
@@ -33,7 +33,7 @@
     
     </v-content>
     <v-content>
-        <h3>Works</h3>
+        <h3 class="ma-8">Works</h3>
         <v-row>
           
             <v-col cols="6" sm="4" v-for=" (work, i) in works" :key="i">
@@ -43,7 +43,7 @@
         </v-row>
     </v-content>
 
-    <h3>illustration</h3>
+    <h3 class="mt-10">illustration</h3>
     <v-row>
         
       <v-col cols="12" sm="6" offset-sm="3">
