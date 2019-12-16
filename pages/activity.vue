@@ -49,6 +49,9 @@ a {
 h2 {
   margin-bottom: 50px;
 }
+.content{
+  margin-top:50px;
+}
 </style>
 
 <script>
