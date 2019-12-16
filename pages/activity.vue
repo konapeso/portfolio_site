@@ -50,7 +50,7 @@ h2 {
   margin-bottom: 50px;
 }
 .container{
-  margin-top:100px;
+  margin-top:1010px;
 }
 </style>
 
@@ -120,7 +120,7 @@ export default {
           title: "Startup Weekend Okinawa Vol.9",
           subtitle: "2019/9",
           article:
-            "デザイナー・エンジニアとして参加し、チームで無料で旅行ができ、自分のスキルを活かして社会に貢献しできるサービスをつくり、3位入賞を果たしました。",
+            "全世界各国の週末の三日間を使った企業体験プログラムでデザイナー・エンジニアとして参加し、チームで無料で旅行ができ自分のスキルを活かして社会に貢献しできるサービスをつくり、3位入賞を果たしました。",
           link: "https://www.facebook.com/konami.ota.73/posts/356775525205851"
         },
         {
