@@ -119,9 +119,7 @@ export default {
                 {src: '/illust5.JPG'},
                 {src: '/logo1.JPG'}
             
-            ]
-      
-     
+            ]     
     };
   }
 };
