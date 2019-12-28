@@ -11,7 +11,7 @@
         <input id="rendou" type="text" name="yourname" placeholder="your name"></div>
         <div class="item">
         <label class="label">メールアドレス</label>
-        <input class="inputs" type="email" name="email">
+        <input class="inputs" type="email" name="email" placeholder="info@sample.com">
         </div>
         <div class="item">
         <label class="label" for="comment">コメント</label>
