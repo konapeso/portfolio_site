@@ -11,6 +11,7 @@
 <style scoped>
 .container{
    margin-top:100px;
+   margin-left:150px;
    text-align:center;
   
     } 
