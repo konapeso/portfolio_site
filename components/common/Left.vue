@@ -27,7 +27,7 @@
     bottom: 100px;
     width: 60px;
 
-    
+
 }
 #left_navigation{
     position: fixed;
@@ -55,7 +55,14 @@ a:visited,
 a:hover,
 a:active {
   color: #808080;
-  text-decoration: none;
+  text-decoration: 
+  none;
+}
+
+@media only screen and (max-width: 600px){
+    #left_navigation{
+    height: 250px;
+    }
 }
 
 </style>

@@ -4,25 +4,25 @@
   
  
 
-      <header id="header">
-        <nav id="main_navigation">
+      <header class="header">
+        <div class="main_navigation">
             <router-link to="/">
                 <img src="@/assets/images/konamiota.JPG" alt="home">
             </router-link>
-            </nav>
-         <nav id="sns_navigation">
+        </div>
+         <div class="sns_navigation">
             <ul>
-                <li><span><a href="https://www.facebook.com/konami.ota.73">
+                <li><span><a href="https://www.facebook.com/konami.ota.73" target="_blank">
                 <img src="@/assets/icons/FB_icon.png" alt="fb" >
                 </a></span></li>
-                <li><span><a href="https://www.instagram.com/kona_pasyo/">
+                <li><span><a href="https://www.instagram.com/kona_pasyo/" target="_blank">
                 <img src="@/assets/icons/INSTAGRAM.png" alt="insta" >
                 </a></span></li>
-                <li><span><a href="https://twitter.com/kona_peso">
+                <li><span><a href="https://twitter.com/kona_peso" target="_blank">
                 <img src="@/assets/icons/TWITTER.png" alt="twi" >
                 </a></span></li>
             </ul>
-         </nav>
+         </div>
     
         </header>
 
@@ -30,8 +30,8 @@
 </template> 
 
 <style scoped>
-    #header{
-   z-index: 20;
+    .header{
+    z-index: 20;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -44,42 +44,70 @@
 
 
     }
-    #main_navigation {
+    .main_navigation {
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
-    width: 630px;
+    max-width: 630px;
     text-align: center;
-}
-    #main_navigation img {
-        width: 300px;
+    }
+    .main_navigation img {
+        width:100%;
+        max-width: 300px;
+        height: auto;
         margin-top:20px;
 
     }
  
-    #sns_navigation {
+    .sns_navigation {
     position: fixed;
     right: 60px;
     top: 40px;
-    width: 202px;
+    max-width: 202px;
  }
     
 
-    #sns_navigation ul {
+    .sns_navigation ul {
     height: 10px;
     display: inline-block;
     
 }
-    #sns_navigation li{
+    .sns_navigation li{
     list-style: none;
     float:left;
 
     }
-    #sns_navigation img{
+    .sns_navigation img{
         height: 20px;
         width:20px;
         margin-right: 20px;
     }
+
+    @media only screen and (max-width: 600px){
+    .header{
+        height:50px;
+    }
+    .main_navigation {
+    width: 170px;
+    float:left;
+    margin-left:1em;
+     margin-top:-5px; 
+    }
+    .main-navigation img{
+        width:200px;
+        height: auto;   
+       
+    }
+    .sns_navigation{
+        right: 0px;
+        top:10px ;
+    }
+    .sns_navigation img{
+        height: 15px;
+        width:auto;
+        margin-right: 20px;
+    }
+}
     
 
 </style>

@@ -54,4 +54,12 @@ a:active {
   color: #808080;
   text-decoration: none;
 }
+
+
+@media only screen and (max-width: 600px){
+   #right_navigation {
+
+  margin-right: -120px;
+  }
+}
 </style>
