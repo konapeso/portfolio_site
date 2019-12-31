@@ -17,6 +17,7 @@
 .container img{
 
   max-width: 100%; 
+  height: 850px;
 
 }
 .pc { display: block !important; }
