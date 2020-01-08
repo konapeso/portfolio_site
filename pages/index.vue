@@ -10,14 +10,14 @@
 
 <style scoped>
 .container{
-   margin-top:100px;
+   margin: 0 auto;
    text-align:center;
   
     } 
 .container img{
-
   max-width: 100%; 
-  height: 700px;
+  height: 600px;
+  margin-top:90px;
 
 }
 .pc { display: block !important; }
