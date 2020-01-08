@@ -28,7 +28,12 @@
    text-align:center;
   
     } 
-    
+    .container img{
+      max-width: 100%; 
+      height: 350px;
+      margin-top:0 ;
+
+}
     .pc { display: none; }
     .sp { display: inline ; }
 }
