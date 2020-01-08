@@ -20,8 +20,7 @@
   margin-top:90px;
 
 }
-.pc { display: block !important; }
-.sp { display: none !important; }
+.sp { display: none; }
 
 @media only screen and (max-width: 768px){
   .container{
@@ -30,8 +29,8 @@
   
     } 
     
-    .pc { display: none !important; }
-    .sp { display: block !important; }
+    .pc { display: none; }
+    .sp { display: inline ; }
 }
 
 
