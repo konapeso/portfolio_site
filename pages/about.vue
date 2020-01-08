@@ -41,8 +41,7 @@
 
 <style scoped>
 
-
-  .main{
+.main{
   margin:90px 30px 30px 30px;
 
 }
