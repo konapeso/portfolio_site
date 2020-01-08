@@ -45,7 +45,7 @@ html {
   margin: 0;
 }
 .container {
-  padding: 90px 50px 60px 50px;
+  padding: 80px 50px 60px 50px;
   height: 100%;
   text-align: center;
 }

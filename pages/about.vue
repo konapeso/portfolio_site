@@ -1,7 +1,7 @@
 <template>
   <div class="main">
       <div class="main-container">
-        <h3>ABOUT</h3>
+        <h2>ABOUT</h2>
         <div class=" main-profile">
 
 
@@ -24,19 +24,12 @@
                 </div>
               </div>
               <div class="detail-text">
-                <p>おきなわ生まれ、おきなわ育ち。</p>
-                <p>顔が薄いのはたぶん祖先が弥生人。</p>
-                <p>いろんなことに興味があります。</p>
-                <div class="hashtag">
-                 <ul class="profile-navi">
-                  <li><a href="#trip">#trip</a></li>
-                  <li><a href="#music">#music</a></li>
-                  <li><a href="https://minne.com/@pdwv22">#handmade</a></li>
-                  <li><a href="#movie">#movie</a></li>
-                  <li><a href="#manga">#manga</a></li>
-                  <li><a href="#ask">#ask</a></li>
-                 </ul>
-              </div>
+                <p>フロントエンドエンジニアを目指し奮闘中👩🏻‍💻</p>
+                <p>CODE BASE 5期</p>
+                <p>趣味でPOPやイラストを書いたり、小物を</p>
+                <p>作ったり、いろんなことをしています。</p>
+                <p>詳しくは、<router-link to="/activity">ACTIVITY</router-link>にて</p>
+                
               </div>
 
             </div>
@@ -47,15 +40,10 @@
 </template>
 
 <style scoped>
-.container{
-  margin-top:50px;
-padding: 90px 50px 60px 50px;
-    height: 100%;
-    text-align:center;
-    }
+
 
   .main{
-  margin:30px;
+  margin:90px 30px 30px 30px;
 
 }
 .main-container{
@@ -64,7 +52,6 @@ padding: 90px 50px 60px 50px;
 }
 .main-container h2{
   text-align: center;
-  font-size: 40px;
   margin:30px
 }
 
@@ -80,7 +67,7 @@ padding: 90px 50px 60px 50px;
 
 
 .profile-inner{
-  padding: 45px;
+  padding: 30px;
   display:flex;
   margin:0;
 
