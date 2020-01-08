@@ -41,15 +41,12 @@ export default {
   */
   modules: [
     '@nuxtjs/vuetify',
-    'nuxt-fontawesome'
+    'nuxt-webfontloader'
   ],
-  fontawesome: {
-    imports: [
-      {
-        set: '@fortawesome/free-solid-svg-icons',
-        icons: ['fas']
-      }
-    ]
+  webfontloader: {
+    google: {
+      families: ['Dawning of a New Day', 'M PLUS Rounded 1c']
+    }
   },
   /*
   ** Build configuration
