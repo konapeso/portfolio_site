@@ -28,7 +28,7 @@
                 <p>CODE BASE 5期</p>
                 <p>趣味でPOPやイラストを書いたり、小物を</p>
                 <p>作ったり、いろんなことをしています。</p>
-                <p>詳しくは、<router-link to="/activity">ACTIVITY</router-link>にて</p>
+                <p>詳しくは、<router-link to="/activity"><span>ACTIVITY</span></router-link>にて</p>
                 
               </div>
 
@@ -126,23 +126,6 @@ img{
 
   }
 
-.twitter{
-  color:gray;
-  text-decoration:none;
-  padding:2px;
-  font-size:1.5em;
-
-}
-
-.instagram{
-  color:gray;
-  text-decoration:none;
-  padding:2px;
-  margin-right:2px;
-  font-size: 1.5em;
-
-}
-
 
   .detail-text{
     margin-top:30px ;
@@ -157,13 +140,12 @@ img{
     text-align:left;
     float:left;
     font-size: 20px;
-    padding:2px
-
+    padding:2px; 
   }
-  .hashtag{
-    margin-left: -30px;
+
+  .detail-text a span{
     color:gray;
-
+    text-decoration:none;
   }
-  
+
 </style>

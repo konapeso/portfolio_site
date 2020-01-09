@@ -52,4 +52,7 @@ html {
 .v-application--wrap{
   background-color:#fff;
 }
+.v-application a{
+  text-decoration:none;
+}
 </style>
