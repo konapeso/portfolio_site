@@ -24,13 +24,13 @@
 
 @media only screen and (max-width: 768px){
   .container{
-   margin-top:10px;
+   margin-top:80px;
    text-align:center;
   
     } 
     .container img{
-      max-width: 100%; 
-      height: 350px;
+      width: 250px; 
+      height: 100%;
       margin-top:0 ;
 
 }
