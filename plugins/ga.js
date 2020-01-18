@@ -4,7 +4,7 @@ export default ({ app }) => {
     /*
     ** クライアントサイドかつプロダクションモードでのみ実行
     */
-    // if (process.env.NODE_ENV !== 'production') return
+   if (process.env.NODE_ENV !== 'production') return
     /*
     ** Google アナリティクスのスクリプトをインクルード
     */
@@ -15,7 +15,7 @@ export default ({ app }) => {
     /*
     ** 現在のページをセット
     */
-    ga('create', 'G-0JDSBC43NJ', 'auto')
+    ga('create', 'UA-154588740-1', 'auto')
     /*
     ** ルートが変更されるたびに毎回実行（初期化も実行される）
     */
