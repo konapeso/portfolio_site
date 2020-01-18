@@ -4,7 +4,7 @@ export default ({ app }) => {
     /*
     ** クライアントサイドかつプロダクションモードでのみ実行
     */
-    if (process.env.NODE_ENV !== 'production') return
+    // if (process.env.NODE_ENV !== 'production') return
     /*
     ** Google アナリティクスのスクリプトをインクルード
     */
